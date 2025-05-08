@@ -31,6 +31,9 @@ user_input = input("Enter the word that you want to convert to morse code: ").up
 for letter in user_input:
     if letter in morse_dict:
         morse_output += morse_dict[letter]
+    elif letter == " ":
+        morse_output += " "
+
     else:
         print(f"Letter {letter} not in the morse dic")
 
